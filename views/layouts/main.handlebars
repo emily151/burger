@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gungrry Burger!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../../public/assets/css/burger_style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <center>
+      <div class="row">
+        <img src="../../assets/img/burger.png" alt="Burger Img">
+        <div class="jumbotron">
+          <h1>Hunngry Burger tImE!</h1>
+    </center>
+
+
+    <br>
+
+
+    {{{body}}}
+
+
+    <br><br><br>
+
+    <form action="burger/create" method="POST">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="form-group col-md-8">
+          <center><label for="new_burger" class="submitFont">Order a new burger!</label></center>
+          <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required" value="" name="burger_name"></textarea>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <center>
+        <button id="submit-button" type="submit" class="btn btn-danger">Cook my Burger!</button>
+      </center>
+
+    </form>
+
+    <br>
+
+  </div>
+
+</body>
+
+</html>
